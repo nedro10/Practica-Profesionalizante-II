@@ -1,0 +1,94 @@
+/* Reset de estilos */
+body,
+h1,
+h2,
+p,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d18d8d;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f34b4b;
+    color: #f06c6c;
+}
+
+header img {
+    height: 80px;
+}
+
+#menu {
+    display: flex;
+    gap: 10px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #df8e59;
+}
+
+section {
+    margin: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f34b4b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#redes-sociales a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Estilo para el calendario */
+#calendario {
+    width: 8%; /* O ajusta el ancho según tus necesidades */
+    padding: 8px;
+    margin: 8px 0;
+}
+
+/* Estilos adicionales para la sección "Sobre Nosotros" */
+#sobre-nosotros {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-nosotros h2 {
+    color: #f34b4b;
+}
+
+#sobre-nosotros p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Otros estilos específicos según sea necesario */

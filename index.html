@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing TuGlitter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d18d8d;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f34b4b;
+            color: #f06c6c;
+        }
+
+        header img {
+            height: 80px;
+        }
+
+        #menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 14px;
+            background-color: #555;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #menu a:hover {
+            background-color: #df8e59;
+        }
+
+        section {
+            margin: 50px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #f34b4b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #redes-sociales a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.PNG" alt="Logo de tu marca">
+        <div id="menu">
+            <a href="#contacto">Contactanos</a>
+            <a href="#sobre-nosotros">Sobre Nosotros</a>
+            <a href="#acerca-del-artista">Acerca del Artista</a>
+            <a href="#galeria-de-fotos">Galeria de fotos</a>
+        </div>
+    </header>
+
+    <section id="contacto">
+        <h2>Contactanos</h2>
+        <input type="text" id="calendario" placeholder="Agenda tu turno">
+        <script>
+            flatpickr("#calendario", {
+                enableTime: true,
+                dateFormat: "d-m-Y H:i",
+                minDate: "today",
+            });
+        </script>
+    </section>
+
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+            <p>Somos más que una marca, somos una historia que comenzó con la pasión por crear productos excepcionales y sostenibles. En nuestro viaje, hemos abrazado la idea de que la belleza no debe comprometer la salud, la ética ni el medio ambiente.</p>
+        
+            <p>Nuestros productos son el resultado de un compromiso inquebrantable con la calidad y la responsabilidad. Cada elemento que elegimos está diseñado para reflejar nuestros valores: 100% hipoalergénicos, libres de crueldad animal y respetuosos con el medio ambiente.</p>
+        
+            <p>En el corazón de nuestra misión está la elección de polímeros biodegradables como base plástica. Esta decisión no solo asegura la seguridad para tu piel, sino que también minimiza nuestro impacto en la ecología. Nos enorgullece decir que al elegir nuestros productos, estás eligiendo una belleza que no compromete nuestro planeta.</p>
+        
+            <p>Nos apasiona lo que hacemos, y cada día nos esforzamos por superar los estándares de profesionalismo y dedicación. Creemos en la belleza consciente y en el amor por nuestro trabajo, y eso se refleja en cada producto que creamos.</p>
+        
+            <p>Gracias por ser parte de nuestra historia y por elegir productos que van más allá de la estética, creando un impacto positivo en el mundo que compartimos.</p>
+        </section>
+            </section>
+
+    <section id="acerca-del-artista">
+        <h2>Acerca del Artista</h2>
+    </section>
+
+    <section id="galeria-de-fotos">
+        <h2>Galeria de fotos</h2>
+    </section>
+
+    <footer>
+        <div id="redes-sociales">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Agregar código JavaScript si es necesario
+    </script>
+
+</body>
+</html>
